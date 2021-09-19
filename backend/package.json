@@ -4,9 +4,9 @@
   "description": "sastaLens using mern",
   "main": "server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Sanjay Murmu",
   "license": "ISC",
